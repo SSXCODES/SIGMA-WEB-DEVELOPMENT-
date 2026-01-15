@@ -10,7 +10,7 @@
     <form action="post">
         <div>
             <label for="username"> Eneter Your Username : </label>
-            <input type="text" id="username " name="username" placeholder ="enter your username">
+            <input type="text" id="username " name="username" placeholder ="enter your username" autofocus required>
         </div>
         <div>
             <input type="radio" id="male" name="gender" value="male"
@@ -20,8 +20,22 @@
         </div>
 
         <div>
-            <input type="checkbox" id="loyal" value="loyal" value="yes">
+            <input type="checkbox" id="loyal" name="loyal" value="yes">
             <label for="loyal">Click for Loyality</label>
+        </div>
+        <div>
+            <label for="comment">Brief About Youself...</label>
+            <br>
+            <textarea id="comment" name="Comment" rows="5" cols="40">Brieef about Youself......</textarea>  
+        </div>
+        <div>
+            <label for="Job">Job Profile</label>
+            <select id="job" name="Job">
+                <option value="Engenier">Engenier</option>
+                <option value="Doctor">Doctor</option>
+                <option value="Artist">Artist</option>
+                <option value="Defence">Defence</option>
+            </select>
         </div>
     </form>
 </body>
